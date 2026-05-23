@@ -1,0 +1,13 @@
+{
+    "org": "agent-ix",
+    "project_name": "My Rust Library",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "project_snake": "{{ cookiecutter.project_slug|replace('-', '_') }}",
+    "description": "A Rust library.",
+    "author": "Your Name",
+    "email": "you@example.com",
+    "rust_msrv": "1.75",
+    "rust_edition": "2021",
+    "version": "0.1.0",
+    "license": "MIT"
+}

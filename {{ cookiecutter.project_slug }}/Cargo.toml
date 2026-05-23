@@ -1,0 +1,21 @@
+[package]
+name = "{{ cookiecutter.project_slug }}"
+version = "{{ cookiecutter.version }}"
+edition = "{{ cookiecutter.rust_edition }}"
+rust-version = "{{ cookiecutter.rust_msrv }}"
+description = "{{ cookiecutter.description }}"
+authors = ["{{ cookiecutter.author }} <{{ cookiecutter.email }}>"]
+license = "{{ cookiecutter.license }}"
+repository = "https://github.com/{{ cookiecutter.org }}/{{ cookiecutter.project_slug }}"
+
+[lib]
+name = "{{ cookiecutter.project_snake }}"
+path = "src/lib.rs"
+
+[dependencies]
+
+[dev-dependencies]
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

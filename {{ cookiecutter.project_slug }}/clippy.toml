@@ -1,0 +1,3 @@
+msrv = "{{ cookiecutter.rust_msrv }}"
+cognitive-complexity-threshold = 30
+too-many-arguments-threshold = 8
