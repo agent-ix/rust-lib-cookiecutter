@@ -1,5 +1,7 @@
 //! {{ cookiecutter.description }}
 
+#![warn(missing_docs)]
+
 /// Placeholder entry point.
 pub fn hello() -> &'static str {
     "hello from {{ cookiecutter.project_snake }}"

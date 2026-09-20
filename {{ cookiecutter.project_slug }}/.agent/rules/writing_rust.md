@@ -6,6 +6,19 @@
 - `make lint` runs `cargo clippy --all-targets -- -D warnings`. Warnings are errors.
 - 100-char max width (rustfmt). `StdExternalCrate` import grouping with crate-level `imports_granularity`.
 
+## Docs
+
+- The crate root carries `#![warn(missing_docs)]`. Every `pub` item needs a real doc
+  comment — one accurate sentence on what it's for, not a restatement of its name. If
+  something shouldn't be public API, narrow its visibility instead of silencing the lint.
+- `missing_docs` is a rustc lint: it fires under `cargo check`/`clippy`, so `make lint`
+  already catches it (escalated to an error by the same `-D warnings`).
+- `rustdoc::broken_intra_doc_links` is a **rustdoc** lint — it only fires under `cargo doc`,
+  never under `clippy`. `make docs` runs `cargo doc --no-deps --all-features` with
+  `RUSTDOCFLAGS="-D warnings"` and is part of `make ci`.
+- Never silence either with `#[allow(missing_docs)]`/`#[allow(rustdoc::...)]`. Write the
+  doc comment, or narrow visibility.
+
 ## Unsafe
 
 - Every `unsafe {` block must have a `// SAFETY: <reason>` comment within the 3 lines above it.

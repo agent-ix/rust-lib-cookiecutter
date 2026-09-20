@@ -30,6 +30,9 @@ jobs:
       - name: Unsafe audit
         run: bash scripts/check_unsafe_comments.sh
 
+      - name: Docs
+        run: RUSTDOCFLAGS="-D warnings" cargo doc --no-deps --all-features
+
   licenses:
     name: License Check
     runs-on: ubuntu-24.04
