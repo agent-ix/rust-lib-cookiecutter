@@ -1,5 +1,7 @@
 # rust-lib-cookiecutter
 
+[![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.gg/k8DVhuYBR2)
+
 Cookiecutter template generating agent-ix Rust library repos.
 
 Generated repos ship with the safety scaffolding backported from `agent-ix/ecaz`:
