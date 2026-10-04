@@ -14,13 +14,13 @@ Generated repos ship with the safety scaffolding backported from `agent-ix/ecaz`
 ## Use
 
 ```bash
-cookiecutter git@github.com:agent-ix/rust-lib-cookiecutter.git
+cookiecutter https://github.com/agent-ix/rust-lib-cookiecutter.git
 ```
 
 Or non-interactive:
 
 ```bash
-cookiecutter ~/dev/rust-lib-cookiecutter --no-input \
+cookiecutter https://github.com/agent-ix/rust-lib-cookiecutter.git --no-input \
   org="agent-ix" \
   project_name="My Crate" \
   description="What it does" \
@@ -43,6 +43,11 @@ cookiecutter ~/dev/rust-lib-cookiecutter --no-input \
 | `rust_edition` | `2021` | Cargo edition |
 | `version` | `0.1.0` | Initial crate version |
 | `license` | `MIT` | SPDX license id; only `MIT` ships a templated LICENSE file |
+
+The template source is MIT licensed. Its default generated project is also MIT
+licensed. The `dev-tools` `/new-project` workflow applies its own AGPL policy
+to generated projects before their first commit; users invoking Cookiecutter
+directly choose their own project license.
 
 ## What's NOT in v1
 
