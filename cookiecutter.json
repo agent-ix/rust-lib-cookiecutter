@@ -6,7 +6,7 @@
     "description": "A Rust library.",
     "author": "Your Name",
     "email": "you@example.com",
-    "rust_msrv": "1.75",
+    "rust_msrv": "1.88",
     "rust_edition": "2021",
     "version": "0.1.0",
     "license": "MIT"

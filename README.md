@@ -41,7 +41,7 @@ cookiecutter https://github.com/agent-ix/rust-lib-cookiecutter.git --no-input \
 | `description` | `A Rust library.` | One-line crate description |
 | `author` | `Your Name` | Cargo `authors` field |
 | `email` | `you@example.com` | Cargo `authors` field |
-| `rust_msrv` | `1.75` | Clippy `msrv` setting |
+| `rust_msrv` | `1.88` | Clippy `msrv` setting |
 | `rust_edition` | `2021` | Cargo edition |
 | `version` | `0.1.0` | Initial crate version |
 | `license` | `MIT` | SPDX license id; only `MIT` ships a templated LICENSE file |
